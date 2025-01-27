@@ -1,6 +1,8 @@
 import Navigation from "./Navigation"
 import Home from "./Home"
 import About from "./About"
+import Vehicles from "./Vehicles"
+import Contact from "./Contact"
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
          <Navigation/>
         <Home/>
         <About/>
+        <Vehicles/>
+        <Contact/>
        </div>
   )
 }

@@ -9,5 +9,6 @@
     --font-raleway : "Raleway";
     --font-canela : "Canela";
     --color-navback : #D9D9D980;
+    --shadow-custom : 0px 2px 4px 0px rgba(0,0,0,0.5) inset;
 }
 

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Canela";
+    src: url("./assets/Canela-Regular.woff" ) format("woff");
+}
+
+@theme {
+    --font-raleway : "Raleway";
+    --font-canela : "Canela";
+    --color-navback : #D9D9D980;
+}
+

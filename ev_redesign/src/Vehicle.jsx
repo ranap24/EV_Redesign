@@ -2,9 +2,9 @@ import React from 'react'
 
 const Vehicle = ({ heading }) => {
     return (
-        <div className='w-[342px] h-[462px] ml-[8px] p-[8px] border border-solid border-black rounded-[32px] shadow-custom inset-shadow-[#000040] relative'>
+        <div className='w-[280px] h-[400px] ml-[8px] p-[8px] border border-solid border-black rounded-[32px] shadow-custom inset-shadow-[#000040] relative'>
             <div className='absolute top-[32px] left-[32px]'>
-                <h1 className='font-raleway text-[48px]'>{heading}</h1>
+                <h1 className='font-raleway text-[32px]'>{heading}</h1>
             </div>
             <div className='absolute bottom-[16px] right-[16px]'>
                 <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">

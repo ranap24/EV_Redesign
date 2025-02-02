@@ -3,7 +3,7 @@ import EVBike2 from './assets/aboutImage.png'
 
 const About = () => {
   return (
-    <div id="about" className='mt-[64px] w-full h-screen flex flex-row justify-between items-center'>
+    <div id="about" className='mt-[128px] w-full h-screen flex flex-row justify-between items-center'>
       <div>
              <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
           <defs>

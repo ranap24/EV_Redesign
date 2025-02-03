@@ -6,7 +6,7 @@ import {AnimatePresence, motion} from 'framer-motion';
 const Contact = () => {
   const[submitted, setSubmitted] = useState(false);
   return (
-    <div id="contact" className='w-full min-h-screen mt-[128px]'>
+    <div id="contact" className='w-full min-h-screen'>
       <div className='font-raleway text-[42px]'>
         <h1>Meet us at <span className='font-bold'>sales</span>@<span className='font-bold'>franklinev.com</span></h1>
       </div>
@@ -15,9 +15,10 @@ const Contact = () => {
       <AnimatePresence mode='wait'>
         {submitted ? 
         <motion.form className='w-full h-full flex flex-col justify-evenly items-start font-raleway' key='form2' initial = {{x : 100,opacity : 0}} animate = {{x : 0,opacity : 1}} exit = {{x : -100,opacity : 0}} transition={{duration : 0.5}}>
-          <h1>How can we help?</h1>
+          <h1 className='text-[24px]'>How can we help?</h1>
           <motion.div>
-            <ContactFormInput type = "checkbox"/>
+          <motion.div>
+            <ContactFormInput type = "checkbox" className='w-[16px] h-[16px] bg-[#D9D9D9]'/>
             <label>Web Design</label>
           </motion.div>
           <motion.div>
@@ -40,6 +41,7 @@ const Contact = () => {
             <ContactFormInput type = "checkbox"/>
             <label>Web/App + Chatbot Development</label>
           </motion.div>
+          </motion.div>
         </motion.form>
         : 
         <motion.form className='w-full h-full flex flex-col justify-evenly items-center' key="form1"  initial = {{x : 100,opacity : 0}} animate = {{x : 0,opacity : 1}} exit = {{x : -100,opacity : 0}} transition={{duration : 0.5}}>
@@ -53,9 +55,9 @@ const Contact = () => {
             <ContactFormInput placeholder='Your Phone Number' className='w-[320px] h-[70px] border-2 border-solid border-black focus:border-3 focus:outline-none rounded-[32px] bg-white font-raleway text-[24px] text-black align-middle pl-[32px] '/>
             </motion.div> 
         </motion.form>}
-        <div>
-                <button type = 'button' className='w-[320px] h-[70px] bg-black rounded-[32px] text-white text-[24px]' onClick={()=>setSubmitted(!submitted)}>{submitted ? <motion.p initial = {{x : 100,opacity : 0}} animate = {{x : 0,opacity : 1}} exit={{x : -100,opacity : 0}} transition={{duration : 0.5}}>Submit</motion.p>:<motion.p initial = {{x : 100,opacity : 0}} animate = {{x : 0,opacity : 1}} exit={{x : -100,opacity : 0}} transition={{duration : 0.5}}>Next</motion.p>}</button>
-         </div>
+        <motion.div key="button">
+                <button type = 'button' className='w-[320px] h-[70px] bg-black rounded-[32px] text-white text-[24px]' onClick={()=>setSubmitted(!submitted)}>{submitted ? <motion.p key = "Submitted" initial = {{x : 100,opacity : 0}} animate = {{x : 0,opacity : 1}} exit={{x : -100,opacity : 0}} transition={{duration : 0.5}}>Submit</motion.p>:<motion.p key="Next" initial = {{x : 100,opacity : 0}} animate = {{x : 0,opacity : 1}} exit={{x : -100,opacity : 0}} transition={{duration : 0.5}}>Next</motion.p>}</button>
+         </motion.div>
       </AnimatePresence>
       </motion.div>
     </div>

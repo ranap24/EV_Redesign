@@ -11,7 +11,7 @@ const Vehicles = () => {
     const vehicleArray = ["NIX-DIX","POWERPLUS","KORO","POWER PRO"];
 
   return (
-    <div id="vehicles" className='h-[1400px] w-full mt-[64px] relative' ref={divRef}>
+    <div id="vehicles" className='h-[1400px] w-full relative' ref={divRef}>
         <div className='sticky top-0'>
         <motion.div className='font-raleway text-[42px]/[57px]' style={{y}}>
         <p>Meet</p>

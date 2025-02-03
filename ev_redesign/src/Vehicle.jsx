@@ -2,7 +2,7 @@ import React from 'react'
 
 const Vehicle = ({ heading }) => {
     return (
-        <div className='w-[280px] h-[400px] ml-[8px] p-[8px] border border-solid border-black rounded-[32px] shadow-custom inset-shadow-[#000040] relative'>
+        <div className='w-[280px] h-[400px] border border-solid border-black rounded-[32px] shadow-custom inset-shadow-[#000040] relative'>
             <div className='absolute top-[32px] left-[32px]'>
                 <h1 className='font-raleway text-[32px]'>{heading}</h1>
             </div>

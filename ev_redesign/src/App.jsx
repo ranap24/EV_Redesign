@@ -7,7 +7,7 @@ import Contact from "./Contact"
 function App() {
 
   return (
-       <div className = 'min-w-full min-h-full flex flex-col items-center justify-center relative' >
+       <div className = 'w-screen min-h-screen sm:w-full border borer-red-500 flex flex-col items-center justify-center relative' >
          <Navigation/>
         <Home/>
         <About/>

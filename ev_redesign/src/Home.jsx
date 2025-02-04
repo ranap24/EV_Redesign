@@ -4,7 +4,7 @@ import EVBike from './assets/Rectangle.png'
 const Home = () => {
     
     return (
-        <div id="home" className='w-full h-full flex flex-row justify-evenly items-center flex-wrap'>
+        <div id="home" className='w-full h-full flex flex-col sm:flex-row justify-evenly items-center'>
             <div className='flex flex-col justify-between items-start'>
                 <p className='font-raleway text-[64px]'>Meet</p>
                 <h1 className='font-canela font-stretch-extra-expanded text-[79px]/[120px] font-[700]'>CarinamiEV</h1>
@@ -18,7 +18,7 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            <div>
+            <div className='w-full'>
             <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <mask id="animatedMask">

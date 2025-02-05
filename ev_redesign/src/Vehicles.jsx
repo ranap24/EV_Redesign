@@ -17,8 +17,8 @@ const Vehicles = () => {
         <p>Meet</p>
         <h1 className='font-bold'>Our Vehicles</h1>
         </motion.div>
-        <div className='w-full overflow-hidden'>
-        <motion.div className='w-screen flex flex-col sm:flex-row flex-nowrap' initial = {{x : "400px"}} style = {{x}}>
+        <div className='w-full overflow-x-auto'>
+        <motion.div className='w-max flex flex-row' initial = {{x : "400px"}} style = {{x}}>
           {vehicleArray.map((heading,index)=><Vehicle key={index} heading = {heading}/>)}
         </motion.div>
         </div>

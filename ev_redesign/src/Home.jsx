@@ -24,19 +24,19 @@ const Home = () => {
     <mask id="animatedMask">
       <rect width="100%" height="100%" fill="black" />
       
-      <rect id="rect1" x="20%" y="15%" width="25%" height="38%" fill="white" rx="20" ry="20">
-        <animate attributeName="height" values="38%;25%;38%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect2.end" fill="freeze" repeatCount="indefinite" />
+      <rect id="rect1" x="23%" y="15%" width="25%" height="38%" fill="white" rx="20" ry="20">
+        <animate attributeName="height" values="38%;26%;38%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect2.end" fill="freeze" repeatCount="indefinite" />
       </rect>
-      <rect id="rect2" x="20%" y="57%" width="25%" height="27%" fill="white" rx="20" ry="20">
-        <animate attributeName="height" values="27%;40%;27%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect1.end" fill="freeze" repeatCount="indefinite" />
-        <animate attributeName="y" values="57%;43%;57%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect1.end" fill="freeze" repeatCount="indefinite" />
+      <rect id="rect2" x="23%" y="55%" width="25%" height="30%" fill="white" rx="20" ry="20">
+        <animate attributeName="height" values="30%;42%;30%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect1.end" fill="freeze" repeatCount="indefinite" />
+        <animate attributeName="y" values="55%;43%;55%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect1.end" fill="freeze" repeatCount="indefinite" />
       </rect>
       
-      <rect id="rect3" x="50%" y="15%" width="25%" height="25%" fill="white" rx="20" ry="20">
-        <animate attributeName="height" values="25%;38%;25%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect4.end" fill="freeze" repeatCount="indefinite" />
+      <rect id="rect3" x="50%" y="15%" width="25%" height="26%" fill="white" rx="20" ry="20">
+        <animate attributeName="height" values="26%;40%;26%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect4.end" fill="freeze" repeatCount="indefinite" />
       </rect>
-      <rect id="rect4" x="50%" y="43%" width="25%" height="40%" fill="white" rx="20" ry="20">
-        <animate attributeName="height" values="40%;27%;40%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect3.end" fill="freeze" repeatCount="indefinite" />
+      <rect id="rect4" x="50%" y="43%" width="25%" height="42%" fill="white" rx="20" ry="20">
+        <animate attributeName="height" values="42%;28%;42%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect3.end" fill="freeze" repeatCount="indefinite" />
         <animate attributeName="y" values="43%;57%;43%" dur="8s" keyTimes="0;0.5;1" begin="0s;rect3.end" fill="freeze" repeatCount="indefinite" />
       </rect>
     </mask>

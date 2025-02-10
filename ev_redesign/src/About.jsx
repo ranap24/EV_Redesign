@@ -1,42 +1,47 @@
 import React from 'react';
 import EVBike2 from './assets/aboutImage.png';
+import {useScroll} from 'framer-motion'
 
 const About = () => {
+   const [scrolledHalf,setScrolledHalf] = useState(false);
+   const[scrollYProgress]  = useScroll({});
+
+
   return (
     <div id="about" className='w-full min-h-screen flex flex-col md:flex-row justify-between items-center p-4 md:p-8'>
       {/* SVG Section */}
       <div className='w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0'>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
   <defs>
     <mask id="animatedMask2">
       <rect width="100%" height="100%" fill="black" />
       
-      <rect id="rect1" x="35%" y="15%" width="30%" height="15%" fill="white" rx="20" ry="20">
-        <animate attributeName="width" values="30%;30%;30%;30%;30%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
-        <animate attributeName="x" values="35%;35%;35%;35%;35%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
-        <animate attributeName="y" values="15%;15%;15%;15%;15%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
-        <animate attributeName="height" values="15%;15%;15%;15%;15%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
+      <rect id="rect1" x="35.5%" y="21%" width="29%" height="14%" fill="white" rx="12" ry="12">
+        {/* <animate attributeName="width" values="29%;29%;29%;29%;29%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
+        <animate attributeName="x" values="35.5%;35.5%;35.5%;35.5%;35.5%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
+        <animate attributeName="y" values="21%;21%;21%;21%;21%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
+        <animate attributeName="height" values="14%;14%;14%;14%;14%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" /> */}
       </rect>
       
-      <rect id="rect2" x="35%" y="33%" width="15%" height="15%" fill="white" rx="20" ry="20">
-        <animate attributeName="width" values="15%;15%;15%;15%;15%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
+      <rect id="rect2" x="35.5%" y="36%" width="15%" height="14%" fill="white" rx="12" ry="12">
+        {/* <animate attributeName="width" values="15%;15%;15%;15%;15%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
         <animate attributeName="x" values="35%;35%;35%;35%;35%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
         <animate attributeName="y" values="33%;33%;33%;33%;33%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
-        <animate attributeName="height" values="15%;15%;30%;30%;45%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
+        <animate attributeName="height" values="15%;15%;30%;30%;45%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" /> */}
       </rect>
 
-      <rect id="rect3" x="35%" y="50%" width="15%" height="15%" fill="white" rx="20" ry="20">
-        <animate attributeName="width" values="15%;15%;15%;30%;15%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
+      <rect id="rect3" x="35.5%" y="51%" width="15%" height="14%" fill="white" rx="12" ry="12">
+        {/* <animate attributeName="width" values="15%;15%;15%;30%;15%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
         <animate attributeName="x" values="35%;35%;35%;35%;45%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
         <animate attributeName="y" values="50%;50%;60%;60%;60%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
-        <animate attributeName="height" values="15%;30%;15%;15%;15%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
+        <animate attributeName="height" values="15%;30%;15%;15%;15%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" /> */}
       </rect>
 
-      <rect id="rect4" x="35%" y="67%" width="30%" height="15%" fill="white" rx="20" ry="20">
-        <animate attributeName="width" values="30%;13%;13%;13%;13%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
+      <rect id="rect4" x="35.5%" y="66%" width="29%" height="14%" fill="white" rx="12" ry="12">
+        {/* <animate attributeName="width" values="30%;13%;13%;13%;13%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
         <animate attributeName="x" values="35%;52%;52%;52%;52%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
         <animate attributeName="y" values="67%;67%;33%;33%;33%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
-        <animate attributeName="height" values="15%;15%;45%;30%;30%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" />
+        <animate attributeName="height" values="15%;15%;45%;30%;30%" dur="7s" keyTimes="0;0.25;0.5;0.75;1" begin="0s" fill="freeze" repeatCount="indefinite" /> */}
       </rect>
     </mask>
   </defs>
@@ -57,6 +62,10 @@ const About = () => {
           <p className='text-base md:text-lg mt-2'>
             We are dedicated to revolutionising urban mobility with cutting-edge electric bikes that blend innovation, sustainability, and performance.
           </p>
+          <svg width="84" height="63" viewBox="0 0 84 63" transform='scale(-1,-1)' fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M45.2493 63L43.8052 60.365C52.7106 54.616 59.4499 45.7528 59.4499 38.5665C59.4499 32.5779 53.192 24.673 47.1748 19.1635V18.4449L71.0029 -3.8147e-06C78.4642 4.79087 84 13.4145 84 21.5589C84 38.5665 64.2636 55.8137 45.2493 63ZM1.44412 63L0 60.365C8.90544 54.616 15.8854 45.7528 15.8854 38.5665C15.8854 32.5779 9.38682 24.673 3.61031 19.1635V18.4449L27.1977 -3.8147e-06C34.659 4.79087 40.4355 13.4145 40.4355 21.5589C40.4355 38.5665 20.4585 55.8137 1.44412 63Z" fill="black"/>
+</svg>
+
         </div>
       </div>
     </div>

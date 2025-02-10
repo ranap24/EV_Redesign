@@ -18,7 +18,7 @@ const Vehicles = () => {
         <h1 className='font-bold'>Our Vehicles</h1>
         </motion.div>
         <div className='w-full overflow-x-auto'>
-        <motion.div className='w-max flex flex-row translate-x-[400px]'  style = {{x}}>
+        <motion.div className='w-max flex flex-row translate-x-[100px] md:translate-x-[400px]'  style = {{x}}>
           {vehicleArray.map((heading,index)=><Vehicle key={index} heading = {heading}/>)}
         </motion.div>
         </div>
